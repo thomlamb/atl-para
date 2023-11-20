@@ -1,0 +1,288 @@
+body {
+    background-color: #0C3B4F;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 63px;
+    text-align: center;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    img {
+        max-width: 1296px;
+        margin: 0 auto;
+        padding: 1rem 0;
+        display: block;
+    }
+}
+
+.quick-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 5rem auto;
+}
+
+.hero {
+    width: 480px;
+    aspect-ratio: 1;
+    position: relative;
+
+    .hero-img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition: all .2s linear;
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.quick {
+    max-width: 640px;
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+
+.anim {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 250px;
+    transform: translateY(168px);
+
+    h2 {
+        margin-top: 14px;
+        position: relative;
+        z-index: -1;
+    }
+
+}
+
+.anim-svg {
+    width: 73px;
+    height: 58px;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(-25px);
+    position: relative;
+    z-index: -2;
+
+    img {
+        position: absolute;
+        visibility: hidden;
+        animation: showHide .5s infinite linear;
+    }
+}
+
+.anim-svg img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.anim-svg img:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+.anim-svg img:nth-child(3) {
+    animation-delay: 400ms;
+}
+
+.anim-svg img:nth-child(4) {
+    animation-delay: 600ms;
+}
+
+.anim-svg img:nth-child(5) {
+    animation-delay: 800ms;
+}
+
+
+@keyframes showHide {
+    0% {
+        visibility: visible;
+    }
+
+    10% {
+        visibility: visible;
+    }
+
+    20% {
+        visibility: hidden;
+    }
+
+    30% {
+        visibility: hidden;
+    }
+
+    40% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+
+    60% {
+        visibility: hidden;
+    }
+
+    70% {
+        visibility: hidden;
+    }
+
+    80% {
+        visibility: hidden;
+    }
+
+    90% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+
+.agenda {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    .agenda-child {
+        max-width: 550px;
+        margin-left: auto;
+        position: relative;
+
+        .agenda-child-img {
+            max-width: 90%;
+            display: block;
+            margin-left: 0 auto;
+
+        }
+
+        .agenda-bubble {
+            &.ab-1 {
+                width: 233px;
+                height: 233px;
+                background: #4BDBF5;
+                border-radius: 50%;
+                position: absolute;
+                top: -2px;
+                z-index: -1;
+                left: -55px;
+            }
+
+            &.ab-2 {
+                width: 192px;
+                height: 192px;
+                background: #F4C6DB;
+                border-radius: 50%;
+                position: absolute;
+                right: 30px;
+                bottom: -56px;
+                z-index: -1;
+            }
+
+            &.ab-3 {
+                width: 197px;
+                height: 197px;
+                background: #72F367;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -59px;
+                left: -77px;
+            }
+        }
+    }
+
+    .agenda-banner {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+    }
+
+    .agenda-rest {
+        max-width: 90%;
+        margin-top: 6rem;
+        margin: 6rem auto 8rem auto;
+        display: block;
+    }
+    .agenda-content {
+        position: relative;
+    }
+}
+
+
+.end-banner {
+    position: relative;
+
+    .end-banner-img {
+        width: 100%;
+        position: relative;
+        z-index: 9;
+    }
+
+    .end-banner-anim {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        top: -61px;
+        z-index: 99;
+    }
+    .end-bubble {
+        &.end-1 {
+            width: 519px;
+            height: 519px;
+            background: #4BDBF5;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 185px;
+        }
+
+        &.end-3 {
+            width: 236px;
+            height: 236px;
+            background: #72F367;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 291px;
+            right: 360px;
+        }
+        &.end-2 {
+            width: 390px;
+            height: 390px;
+            background: #F4C6DB;
+            border-radius: 50%;
+            position: absolute;
+            right: -99px;
+            bottom: 8px;
+        }
+
+    }
+}
+
+.footer {
+    position: relative;
+  z-index: 99999;
+  top: -7px;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
